@@ -90,6 +90,7 @@ body {
 }
 
 .dropdown a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: white;
 }
 
@@ -159,8 +160,21 @@ img.navbar-brand {
 
 .carousel-item {
     color: black;
+    font-size: 1rem;
+}
+
+.carousel-item p {
+    margin-right: 2.3rem;
+}
+
+.carousel-item b {
     font-weight: bolder;
-    font-size: 14px;
+}
+
+.carousel-item h4 {
+    color: #146356;
+    font-weight: bolder;
+    font-family: cursive;
 }
 
 .carousel-indicators {
@@ -199,21 +213,6 @@ hr.rounded {
     margin-bottom: 2rem;
 }
 
-@media screen and (max-width: 992px) {
-    .carousel-item img {
-        width: 80%;
-        padding-left: 20%;
-        margin-left: 5%;
-    }
-
-    .container-info {
-        margin-top: 10%;
-        padding-left: 10%;
-        margin-right: 18%;
-        margin-bottom: 10%;
-    }
-}
-
 .card-img-top {
     width: 100%;
     height: 100%;
@@ -234,6 +233,36 @@ img.img-circle {
     height: 100%;
 }
 
+.about h3 i {
+    margin-left: 1rem;
+    font-size: x-large;
+}
+
+.editorial-info .redacao h5, .editorial-info .redacao p {
+    display: inline;
+}
+
+.editorial-info .pesquisa h5, .editorial-info .pesquisa p {
+    display: inline;
+}
+
+.editorial-info .gerente h5, .editorial-info .gerente p {
+    display: inline;
+}
+
+.editorial-info h5 {
+    font-weight: bolder;
+    color: #146356;
+}
+
+.editorial-info p {
+    color: black;
+}
+
+.editorial-info i {
+    color: black;
+}
+
 .fa {
     color: white;
     width: 50px;
@@ -252,4 +281,101 @@ img.img-circle {
     margin-top: 15px;
     align-self: center;
     color: black;
+}
+
+@media screen and (max-width: 992px) {
+    .carousel-item {
+        color: black;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .carousel-item img {
+        width: 80%;
+        padding-left: 20%;
+        margin-left: 5%;
+    }
+
+    .container-info {
+        margin-top: 10%;
+        padding-left: 10%;
+        margin-right: 18%;
+        margin-bottom: 10%;
+    }
+
+    .user h4 {
+        margin-top: 1rem;
+        font-size: large;
+    }
+
+    .profile-header-container img.img-circle {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .noticias .img {
+        height: fit-content;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .carousel-item img {
+        width: 80%;
+        padding-left: 20%;
+        margin-left: 5%;
+    }
+
+    .container-info {
+        margin-top: 10%;
+        padding-left: 10%;
+        margin-right: 18%;
+        margin-bottom: 10%;
+    }
+
+    .card {
+        width: fit-content;
+        flex-direction: column;
+    }
+
+    .card-body {
+        height: fit-content;
+    }
+
+    p.card-text {
+        color: black;
+        align-items: center;
+        text-align: center;
+        font-size: small;
+    }
+
+    .user h4 {
+        margin-top: 2rem;
+        font-size: small;
+    }
+
+    .user p {
+        font-size: small;
+    }
+
+    .profile-header-container img.img-circle {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .noticias .img {
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+
+    .noticias .info h5, p {
+        font-size: small;
+    }
+
+    .about p {
+        font-size: small;
+    }
+
+    .about h3 i {
+        font-size: 1rem;
+    }
 }
